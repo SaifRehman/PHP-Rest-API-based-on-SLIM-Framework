@@ -4,7 +4,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 require 'vendor/autoload.php';
 $app = new \Slim\App;
 //                                                Reading Json Parameters                                               \\
-$app->post('/InsertUserInfo', function (Request $request, Response $response) {
+$app->post('/Post', function (Request $request, Response $response) {
   $servername = "localhost";
   $username = "username";
   $password = "password";
@@ -26,7 +26,7 @@ $app->post('/InsertUserInfo', function (Request $request, Response $response) {
     echo "inserted";
 });
 
-$app->post('/UpdateAlarm', function (Request $request, Response $response) {
+$app->post('/Update', function (Request $request, Response $response) {
   $servername = "localhost";
   $username = "username";
   $password = "password";
@@ -74,7 +74,7 @@ $app->get('/get', function (Request $request, Response $response) {
         ->write(json_encode(array('result' => $outp)));
 });
 
-$app->get('/GetAllInfoForAppAlarm/{username}/{token}', function (Request $request, Response $response) {
+$app->get('/GetByLinkParams/{username}/{token}', function (Request $request, Response $response) {
   $servername = "localhost";
   $username = "username";
   $password = "password";
