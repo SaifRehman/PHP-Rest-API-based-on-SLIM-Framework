@@ -1,7 +1,7 @@
 # PHP-Rest-API-based-on-SLIM-Framework
 ## Author
 [SaifRehman](SaifRehman.github.io)
-
+```
 MIT License
 
 Copyright (c) 2017 SaifRehman
