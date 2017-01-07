@@ -4,7 +4,7 @@ use \Psr\Http\Message\ResponseInterface as Response;
 require 'vendor/autoload.php';
 $app = new \Slim\App;
 //                                              Reading Json Parameters                                               \\
-$app->post('/Post', function (Request $request, Response $response) {
+$app->post('/post', function (Request $request, Response $response) {
   $servername = "localhost";
   $username = "username";
   $password = "password";
