@@ -26,7 +26,7 @@ $app->post('/post', function (Request $request, Response $response) {
     echo "inserted";
 });
 
-$app->post('/Update', function (Request $request, Response $response) {
+$app->post('/update', function (Request $request, Response $response) {
   $servername = "localhost";
   $username = "username";
   $password = "password";
