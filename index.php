@@ -3,7 +3,7 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 require 'vendor/autoload.php';
 $app = new \Slim\App;
-//                                                Reading Json Parameters                                               \\
+//                                              Reading Json Parameters                                               \\
 $app->post('/Post', function (Request $request, Response $response) {
   $servername = "localhost";
   $username = "username";
